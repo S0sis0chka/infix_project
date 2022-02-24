@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block main %}
+<h1 class="display-1 text-center">Калькулятор выражений</h1 >
+<div class="row d-flex justify-content-center align-items-center">
+    <div class="col-4">
+        <div class="card-body">
+            <form method="post">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="from" class="form-label">Выберите исходный тип</label>
+                    <select class="form-select" id="from" name="from"aria-label="Default select example">
+                        <option value="1">Префикс</option>
+                        <option value="2">Постфикс</option>
+                        <option value="3">Инфикс</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="to" class="form-label">Выберите нижный тип</label>
+                    <select class="form-select" id="from" name="to" aria-label="Default select example">
+                        <option value="1">Префикс</option>
+                        <option value="2">Постфикс</option>
+                        <option value="3">Инфикс</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="to" class="form-label">Выражение</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" name="text"aria-describedby="emailHelp">
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary">Вычислить</button>
+                </div>
+            </form>
+            <div class="text-center mt-3">
+                <p>
+                    {{result}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock%}
