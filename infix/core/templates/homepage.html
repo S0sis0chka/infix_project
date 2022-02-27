@@ -1,16 +1,16 @@
 {% extends 'base.html' %}
 {% block main %}
-<h1 class="display-1 text-center">Длинное название</h1>
+<h1 class="display-2 text-center">Calculate your Infix/Prefix/Postfix</h1>
 
 <div class="row d-flex justify-content-center">
-    <div class="col-4"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor quo, quae saepe porro repellendus consequatur libero blanditiis temporibus dignissimos laboriosam.</p></div>
+    <div class="col-4"><p>На этом сайте вы можете конвертировать записи выражений.</p></div>
 </div>
 <div class="row d-flex justify-content-center align-items-center">
     <div class="col-4">
         <div class="card">
             <div class="card-body">
               <h5 class="card-title text-center">Prefix</h5>
-              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit expedita accusantium iusto maiores molestias pariatur sint eum itaque. Quibusdam, fugiat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque iusto optio ipsam deserunt, numquam fugit enim error quis natus maiores.</p>
+              <p class="card-text">Математическая запись выражения, использовалась в основном для старой вычислительной техники.</p>
               <div class="d-flex justify-content-center">
                 <a href="{% url 'calc' %}" class="btn btn-primary">Calculate</a>
               </div>
@@ -22,7 +22,7 @@
         <div class="card">
             <div class="card-body">
               <h5 class="card-title text-center">Infix</h5>
-              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit expedita accusantium iusto maiores molestias pariatur sint eum itaque. Quibusdam, fugiat.</p>
+              <p class="card-text">Запись выражения, которую видим мы - обычные люди.</p>
               <div class="d-flex justify-content-center">
                 <a href="{% url 'calc' %}" class="btn btn-primary">Calculate</a>
               </div>
@@ -34,7 +34,7 @@
         <div class="card">
             <div class="card-body">
               <h5 class="card-title text-center">Postfix</h5>
-              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit expedita accusantium iusto maiores molestias pariatur sint eum itaque. Quibusdam, fugiat.</p>
+              <p class="card-text">Эта запись выражения используется в наше время в компьютерах.</p>
               <div class="d-flex justify-content-center">
                 <a href="{% url 'calc' %}" class="btn btn-primary">Calculate</a>
               </div>
